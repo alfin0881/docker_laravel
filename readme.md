@@ -25,17 +25,17 @@ Beberapa program yang digunakan adalah:
       
    - Build Ulang :
      ```bash
-        docker compese up -d --build
+     docker compese up -d --build
      ```
      
    - Build image :
      ```bash
      docker compose build
-      ```
+     ```
     
    - Restart satu container :
      ```bash
-      docker restart nama_project
+     docker restart nama_project
      ```
       
    - Mematikan semua container :
