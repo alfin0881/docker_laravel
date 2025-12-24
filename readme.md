@@ -17,4 +17,54 @@ Beberapa program yang digunakan adalah:
    ```
 5. Setelah container berjalan, buka browser anda dan akses `http://localhost:(sesuaikan dengann port)` untuk melihat aplikasi Laravel yang sedang berjalan.
 6. Jangan lupa untuk mengatur file `.env` sesuai dengan kebutuhan anda, terutama bagian database.
+7. Command Penting !!!
+   > Untuk Menjalankan projek :
+      ```bash
+      docker compose up -d
+      ```
+      
+   > Build Ulang :
+     ```bash
+     docker compese up -d --build
+     ```
+     
+   > Build image :
+    ```bash
+    docker compose build
+    ```
+    
+   > Restart satu container :
+      ```bash
+      docker restart nama_project
+      ```
+      
+   > Mematikan semua container :
+      ```bash
+      docker compose down
+      ```
+      
+   > Cek Status :
+      ```bash
+      docker ps
+      ```
+      
+   > Lihat Semua container :
+      ```bash
+      docker ps -a
+      ```
+      
+   > Lihat log :
+      ```bash
+      docker logs -f nama_projek
+      ```
+      
+   > Masuk container laravel :
+      ```bash
+      docker exec -it nama_projek bash
+      ```
+      
+   > Keluar :
+      ```bash
+      exit
+      ```
 
