@@ -13,7 +13,7 @@ Beberapa program yang digunakan adalah:
 3. Buka terminal dan masuk ke direktori tempat anda menyimpan file ini.
 4. Jalankan perintah berikut untuk membangun dan menjalankan container:
    ```bash
-   docker-compose up -d
+   docker compose up -d
    ```
 5. Setelah container berjalan, buka browser anda dan akses `http://localhost:(sesuaikan dengann port)` untuk melihat aplikasi Laravel yang sedang berjalan.
 6. Jangan lupa untuk mengatur file `.env` sesuai dengan kebutuhan anda, terutama bagian database.
@@ -22,20 +22,19 @@ Beberapa program yang digunakan adalah:
       ```bash
       docker compose up -d
       ```
-      
-   - Build Ulang :
-     ```bash
-     docker compese up -d --build
-     ```
      
    - Build image :
      ```bash
      docker compose build
      ```
-    
-   - Restart satu container :
+   - Build ulang + jalankan :
      ```bash
-     docker restart nama_project
+     docker compose up -d --build
+     ```
+    
+   - Restart satu service :
+     ```bash
+     docker compose restart app
      ```
       
    - Mematikan semua container :
@@ -45,7 +44,7 @@ Beberapa program yang digunakan adalah:
       
    - Cek Status :
      ```bash
-     docker ps
+     docker compose ps
      ```
       
    - Lihat Semua container :
@@ -55,7 +54,7 @@ Beberapa program yang digunakan adalah:
       
    - Lihat log :
      ```bash
-     docker logs -f nama_projek
+     docker compose logs -f app
      ```
       
    - Masuk container laravel :
