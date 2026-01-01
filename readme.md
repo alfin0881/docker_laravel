@@ -60,7 +60,7 @@ Beberapa program yang digunakan adalah:
       
    - Masuk container laravel :
      ```bash
-     docker exec -it nama_projek bash
+     docker compose exec app bash
      ```
       
    - Keluar :
